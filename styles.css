@@ -1,0 +1,82 @@
+/* styles.css */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+/* Container styles */
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Block styles */
+.block {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.block > div {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.block > .points {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.points button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.points button:hover {
+    background-color: #0056b3;
+}
+
+/* Flexbox adjustments for rows */
+#subBlock {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.score {
+    font-size: 22px; /* Larger font size */
+    font-weight: bold; /* Make it bold */
+    color: #0f253c; /* Blue color */
+}
